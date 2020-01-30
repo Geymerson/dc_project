@@ -36,9 +36,9 @@ names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Gaussian Process",
 def metrics(estimator, x, y):
     y_pred = estimator.predict(x)
 
-    acc = accuracy_score(y, y_pred),
-    precision = precision_score(y, y_pred, pos_label=3, average='macro'),
-    recall = recall_score(y, y_pred, pos_label=3, average='macro'),
+    acc = accuracy_score(y, y_pred)
+    precision = precision_score(y, y_pred, pos_label=3, average='macro')
+    recall = recall_score(y, y_pred, pos_label=3, average='macro')
     f1 = f1_score(y, y_pred, average='macro')
     roc = roc_auc_score(y, y_pred)
 
